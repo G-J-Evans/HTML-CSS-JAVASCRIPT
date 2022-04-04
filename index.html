@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formsexplaination</title>
+
+</head>
+<body>
+    
+    <!-- FORMS -->
+    <!-- two main attributes -->
+    <!-- METHOD and ACTION -->
+    <!-- method -> HOW to send data -->
+    <!-- action -> WHERE to send data -->
+
+    <!-- GET method -->
+    <!-- it sends input into the URL bar -->
+    <!-- with a key : value pair -->
+    <!-- uses a hyperlink -->
+    <form method="get" action="search.html">
+        <h4>
+            Get form
+        </h4>
+        <!-- an input for text -->
+        <input name="query" type="text"/>
+        <!-- a button to submit the form -->
+        <button type="submit">
+            SEND
+        </button>
+    </form>
+
+    <!-- POST method -->
+    <!-- sends data to action URL -->
+    <form method="post" action="./mailform.php">
+        <h4>
+            POST form
+        </h4>
+        <input name="message" type="text"/>
+        <button type="submit">
+            MAIL
+        </button>
+    </form>
+
+    <!-- you don't NEED an action or a method to make a form -->
+    <form>
+        <h4>
+            More Inputs
+        </h4>
+
+        <!-- Checkboxes -->
+        <input type="checkbox" name="checkbox1" value="1"/>1
+        <input type="checkbox" name="checkbox2" value="1"/>2
+
+        <br/>
+
+        <!-- radio buttons -->
+        <!-- similar to checkbox but can be linked together -->
+        <fieldset>
+            <legend>
+                Question 1:
+            </legend>
+            <input type="radio" name="choice" value="a">a
+            <input type="radio" name="choice" value="b">b
+            <input type="radio" name="choice" value="c">c
+            <input type="radio" name="choice" value="d">d
+        </fieldset>
+
+        <br/>
+
+        <!-- data selection -->
+        <input type="date" name="booking"/>
+
+        <br/>
+
+        <!-- colour -->
+        <input type="color" name="shading"/>
+    </form>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
