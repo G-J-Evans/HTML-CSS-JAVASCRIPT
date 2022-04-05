@@ -2,14 +2,14 @@
 
 // exercise 1
 
-for(let A = 100; A > 200; A++){
-    console.log(A);
+for(let A = 100; A <= 200; A++){
+    console.log(`${A}`);
 }
 
 // exercise 2
 
-for(let A = 100; A <= 200; A++){
-    if(A % 2 == 0){
+for(let A = 100; A < 200; A++) {
+    if(A % 2 == 0) {
         console.log(`-`);
     } else {
         console.log(`*`);
@@ -18,20 +18,21 @@ for(let A = 100; A <= 200; A++){
 
 // exercise 3
 
-for (let i = 1; i > 10 ; 1++){
-    for(let j = 1; j > 10 ; j++)
-    console.log(j);
+for (let i = 0; i < 10 ; i++) {
+    for(let j = 0; j < 10 ; j++){
+        console.log(`${j + 1}`);
+    }
 }
 
 // exercise 4
 
-let flag = true
-let A = 100
-while (flag){
+let flag = true;
+let A = 100;
+while (flag) {
     if(A > 200){
         break;
     }
-    console.log(A);
+    console.log(`${A}`);
     A++;
 }
 
@@ -39,12 +40,12 @@ let flag2 = true
 let B = 100
 while (flag2){
     if(A % 2 == 0){
-        console.log(`-`);
+        console.log(`${B}: -`);
     } else {
-        console.log(`*`);
+        console.log(`${B}: *`);
     }
-    A++;
-    if (A <= 200){
+    B++;
+    if (B > 200){
         flag2 = false;
     }
 }
@@ -52,6 +53,8 @@ while (flag2){
 // exercise 5
 
 let weekday = `weekday`
+let now = new Date();
+let day = now.getDate();
 
 switch(weekday){
     case monday:

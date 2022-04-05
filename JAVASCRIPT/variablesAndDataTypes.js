@@ -38,8 +38,8 @@ let aNumber = 101;
 let aString =`text23121@!`;
 let aBigInt = 99999999999999999n;
 let aSymbol = Symbol(`description`);
-let aNull = null;
-let anUndefined;
+let aNull = null; // points to memory, but the memory is empty
+let anUndefined; // has a yet undefined data type.
 
 // --- OBJECTS ---
 // they are a collection of properties
