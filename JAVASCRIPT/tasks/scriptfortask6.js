@@ -20,8 +20,7 @@ console.log(myArray.length);
 myArray.push(`who` , `is`, `here`);
 console.log(myArray.length);
 myArray.shift;
-myArray.shift;
 
-for (let str of myArray){
-    console.log(str);
+for (let elem of myArray){
+    console.log(elem);
 }

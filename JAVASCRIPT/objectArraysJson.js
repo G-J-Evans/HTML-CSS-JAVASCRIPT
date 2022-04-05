@@ -77,3 +77,6 @@ let str = JSON.stringify(newJSON);
 
 console.log(newJSON);
 console.log(str);
+
+let person = JSON.parse(`{"name":"ellie","age":43}`);
+console.log(person);
