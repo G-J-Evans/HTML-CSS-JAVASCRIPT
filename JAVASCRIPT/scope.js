@@ -44,8 +44,33 @@ foo();
 */
 
 let globalVar = () => {
-    greeting = `hello`
+    greeting = `hello`;
 }
 
 globalVar();
 
+// Standard Global
+/*
+    declaring a variable outside of a code block
+    it can be accessed from anywhere
+*/
+
+let a = `a`;
+
+console.log(a);
+
+{
+    console.log(`a is = ${a}`);
+}
+
+let b = (a) => {
+    console.log(`function b gives us ${a}`);
+}
+
+b(a)
+
+// HOW JAVASCRIPT LOOKS FOR VARIABLES
+
+// 1. Local (inside the block)
+// 2. Global (outside of the block)
+// 3. If none exsists crea and add to global scope

@@ -42,10 +42,7 @@
 // }
 
 function divisableExactlyByThree(x) {
-    if(x % 3 == 0){
-        return true;
-    }
-    return false;
+    return !(x%3);
 }
 
 function divisableExactlyByFive(x) {
@@ -79,12 +76,12 @@ for (i = 1; i < 101; i++) {
         console.log(`${i}`));
 }
 
-for (i = 1; i < 101; i++) {
-    divisableExactlyByThree(i) ?
-    divisableExactlyByFive(i) ?
-        fizz() :
-        fizzbuzz() :
-    divisableExactlyByFive(i) ?
-        buzz() :
-        console.log(`${i}`);
-}
+// for (i = 1; i < 101; i++) {
+//     divisableExactlyByThree(i) ?
+//     divisableExactlyByFive(i) ?
+//         fizz() :
+//         fizzbuzz() :
+//     divisableExactlyByFive(i) ?
+//         buzz() :
+//         console.log(`${i}`);
+// }
