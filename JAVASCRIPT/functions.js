@@ -51,9 +51,9 @@ log = (data) => {
     console.log(data);
 }
 
-// OR
+// more arrow
 log = (data) => {console.log(data)};
-log2 = data => console.log(data);
+log2 = data => console.log(data); // Cleanest arrow
 
 log("message1");
 log2("message2");
