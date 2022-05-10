@@ -25,18 +25,18 @@ let divide = (x, y) => {
     return x / y;
 }
 
-// Calculator
+// Calculator user interaction and display
 {
-    let child;
+    let answer;
     
     let displayAnswer = (x , y , z , operator) => {
-    child = document.createElement(`li`);
-    child.classList.add("list-group-item");
-    child.innerHTML = `${x} ${operator} ${y} = ${z}`;
+    answer = document.createElement(`li`);
+    answer.classList.add("list-group-item");
+    answer.innerHTML = `${x} ${operator} ${y} = ${z}`;
     }
 
     DOM.buttonEquals.onclick = () => {
-        DOM.outputList.appendChild(child);
+        DOM.outputList.appendChild(answer);
     }
     
     DOM.buttonAdd.onclick = () => {
@@ -76,7 +76,6 @@ let divide = (x, y) => {
 
 let reset = () => {
     let inputs = document.querySelectorAll('input');
-    console.log(inputs);
     for (let input of inputs){
         input.value = '0';
     }
